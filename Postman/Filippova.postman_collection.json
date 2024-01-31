@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "14eb63ba-c16f-4c85-956d-0ba95c0c2265",
+		"name": "Filippova",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24883038"
+	},
+	"item": [
+		{
+			"name": "Создать пользователя",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Jastin540",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Jastin",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Fantola",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gsrgw123fD",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Fantola_J@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/user/register",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Авторизация",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Malianses",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/user/login",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление пользователя",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uwUBgOwOTtd_alK5OjD-KhENdGH1iy7O",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Malianss",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghost",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Portu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "fefw341231f",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ghoster@mail.ru",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/user/del/1",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"user",
+						"del",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изменить данные пользователя",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uwUBgOwOTtd_alK5OjD-KhENdGH1iy7O",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Portu",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ghost",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ghoster@mail.ru",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "fefw341231f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/user/updates/Malianss",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"user",
+						"updates",
+						"Malianss"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение товара",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/product/get/435665",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"product",
+						"get",
+						"435665"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить товар",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "V-GySyFrlVCPtlQENtDjIkNZnm_TVPP2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_product",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/product/del",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"product",
+						"del"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание продукта",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "biFmA_41IhSTkEjFTUkE-QUUmUdl_3Rz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"value": "1034.jpg",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Груши",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "id_product",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "region_id",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/product/create",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"product",
+						"create"
+					],
+					"query": [
+						{
+							"key": "image",
+							"value": "fdgdfgfdg//fgdfgfd",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Апельсин",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "45",
+							"disabled": true
+						},
+						{
+							"key": "id_product",
+							"value": "546326",
+							"disabled": true
+						},
+						{
+							"key": "region_id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "создать область",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Четвёртый парк",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/region/creates",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"region",
+						"creates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить область",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "biFmA_41IhSTkEjFTUkE-QUUmUdl_3Rz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Пятый парк",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/region/del",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"region",
+						"del"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "новая станция",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изменить название области",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "biFmA_41IhSTkEjFTUkE-QUUmUdl_3Rz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_name",
+							"value": "новая область",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/region/update/name/2",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"region",
+						"update",
+						"name",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Поиск",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name_column",
+							"value": "price",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-filippova.xn--80ahdri7a.site/product/search",
+					"protocol": "https",
+					"host": [
+						"k-filippova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"product",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
